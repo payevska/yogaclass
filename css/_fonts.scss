@@ -1,0 +1,102 @@
+$extrabold: 800;
+$bold: 700;
+$medium-plus: 600;
+$medium: 500;
+$regular: 400;
+$light: 300;
+
+@font-face {
+    font-family: 'PT Serif', serif;
+    src: url('fonts/PT_Serif/PT_SerifWebBold.eot');
+    src: url('fonts/PT_Serif/PT_SerifWebBold.eot') format('embedded-opentype'),
+         url('fonts/PT_Serif/PT_SerifWebBold.woff2') format('woff2'),
+         url('fonts/PT_Serif/PT_SerifWebBold.woff') format('woff'),
+         url('fonts/PT_Serif/PT_Serif-Web-Bold.ttf') format('truetype'),
+         url('fonts/PT_Serif/PT_SerifWebBold.svg#PT_SerifWebBold') format('svg');
+    font-style: normal;
+    font-weight: $bold;     
+}
+
+@font-face {
+    font-family: 'PT Serif', serif;
+    src: url('fonts/PT_Serif/PT_SerifWebBoldItalic.eot');
+    src: url('fonts/PT_Serif/PT_SerifWebBoldItalic.eot') format('embedded-opentype'),
+         url('fonts/PT_Serif/PT_SerifWebBoldItalic.woff2') format('woff2'),
+         url('fonts/PT_Serif/PT_SerifWebBoldItalic.woff') format('woff'),
+         url('fonts/PT_Serif/PT_Serif-Web-BoldItalic.ttf') format('truetype'),
+         url('fonts/PT_Serif/PT_SerifWebBoldItalic.svg#PT_SerifWebBoldItalic') format('svg');
+    font-style: italic;
+    font-weight: $bold;     
+}
+
+@font-face {
+    font-family: 'PT Serif', serif;
+    src: url('fonts/PT_Serif/PT_SerifWebItalic.eot');
+    src: url('fonts/PT_Serif/PT_SerifWebItalic.eot') format('embedded-opentype'),
+         url('fonts/PT_Serif/PT_SerifWebItalic.woff2') format('woff2'),
+         url('fonts/PT_Serif/PT_SerifWebItalic.woff') format('woff'),
+         url('fonts/PT_Serif/PT_Serif-Web-Italic.ttf') format('truetype'),
+         url('fonts/PT_Serif/PT_SerifWebItalic.svg#PT_SerifWebItalic') format('svg');
+    font-style: italic;
+    font-weight: $regular;     
+}
+
+@font-face {
+    font-family: 'PT Serif', serif;
+    src: url('fonts/PT_Serif/PT_SerifWebRegular.eot');
+    src: url('fonts/PT_Serif/PT_SerifWebRegular.eot') format('embedded-opentype'),
+         url('fonts/PT_Serif/PT_SerifWebRegular.woff2') format('woff2'),
+         url('fonts/PT_Serif/PT_SerifWebRegular.woff') format('woff'),
+         url('fonts/PT_Serif/PT_Serif-Web-Regular.ttf') format('truetype'),
+         url('fonts/PT_Serif/PT_SerifWebRegular.svg#PT_SerifWebRegular') format('svg');
+    font-style: normal;
+    font-weight: $regular;     
+}
+
+@font-face {
+    font-family: 'PT Sans', sans-serif;
+    src: url('fonts/PT_Sans/PT_SansWebBold.eot');
+    src: url('fonts/PT_Sans/PT_SansWebBold.eot') format('embedded-opentype'),
+         url('fonts/PT_Sans/PT_SansWebBold.woff2') format('woff2'),
+         url('fonts/PT_Sans/PT_SansWebBold.woff') format('woff'),
+         url('fonts/PT_Sans/PT_Sans-Web-Bold.ttf') format('truetype'),
+         url('fonts/PT_Sans/PT_SansWebBold.svg#PT_SansWebBold') format('svg');
+    font-style: normal;
+    font-weight: $bold;
+}
+
+@font-face {
+    font-family: 'PT Sans', sans-serif;
+    src: url('fonts/PT_Sans/PT_SansWebBoldItalic.eot');
+    src: url('fonts/PT_Sans/PT_SansWebBoldItalic.eot') format('embedded-opentype'),
+         url('fonts/PT_Sans/PT_SansWebBoldItalic.woff2') format('woff2'),
+         url('fonts/PT_Sans/PT_SansWebBoldItalic.woff') format('woff'),
+         url('fonts/PT_Sans/PT_Sans-Web-BoldItalic.ttf') format('truetype'),
+         url('fonts/PT_Sans/PT_SansWebBoldItalic.svg#PT_SansWebBoldItalic') format('svg');
+    font-style: italic;
+    font-weight: $bold;
+}
+
+@font-face {
+    font-family: 'PT Sans', sans-serif;
+    src: url('fonts/PT_Sans/PT_SansWebItalic.eot');
+    src: url('fonts/PT_Sans/PT_SansWebItalic.eot') format('embedded-opentype'),
+         url('fonts/PT_Sans/PT_SansWebItalic.woff2') format('woff2'),
+         url('fonts/PT_Sans/PT_SansWebItalic.woff') format('woff'),
+         url('fonts/PT_Sans/PT_Sans-Web-Italic.ttf') format('truetype'),
+         url('fonts/PT_Sans/PT_SansWebItalic.svg#PT_SansWebItalic') format('svg');
+    font-style: italic;
+    font-weight: $regular;     
+}
+
+@font-face {
+    font-family: 'PT Sans', sans-serif;
+    src: url('fonts/PT_Sans/PT_SansWebRegular.eot');
+    src: url('fonts/PT_Sans/PT_SansWebRegular.eot') format('embedded-opentype'),
+         url('fonts/PT_Sans/PT_SansWebRegular.woff2') format('woff2'),
+         url('fonts/PT_Sans/PT_SansWebRegular.woff') format('woff'),
+         url('fonts/PT_Sans/PT_Sans-Web-Regular.ttf') format('truetype'),
+         url('fonts/PT_Sans/PT_SansWebRegular.svg#PT_SansWebRegular') format('svg');
+    font-style: normal;
+    font-weight: $regular;
+}

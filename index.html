@@ -2,30 +2,41 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="Web desing landing page">
 	<meta name="autor" content="Brad Traversy">
 	<meta name="keywords" content="web desing, landing page">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<title>Site_landing_page</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-	<header class="container">
-		<div class="logotype">
-			<a href="img/" class="logotype_big" alt="logotype"></a>
-		</div>
-		<nav class="horizontal-menu">
-			<menu id="burger-menu"></menu>
-			<div class="horizontal-menu__group-section">
-				<ul class="horizontal-menu__group-section_box-menu">
-					<li class="horizontal-menu__group-section_box-menu_name-section">Home</li>
-					<li class="horizontal-menu__group-section_box-menu_name-section">About Us</li>
-					<li class="horizontal-menu__group-section_box-menu_name-section">Schegule</li>
-					<li class="horizontal-menu__group-section_box-menu_name-section">Studio policies</li>
-				</ul>
+	<header>
+		<div class="container">
+  			<div class="row">
+				<div class="col-xl logotype">
+					<a href="img/" class="logotype_big" alt="logotype"></a>
+				</div>
 			</div>
-		</nav>
+			<div class="row">	
+				<div class="col-xl">
+					<nav class="horizontal-menu">
+						<menu id="burger-menu" class="col-1">burger</menu>
+						<div class="col-10 horizontal-menu__group-section">
+							<ul class="horizontal-menu__group-section_box-menu">
+								<li class="horizontal-menu__group-section_box-menu_name-section">Home</li>
+								<li class="horizontal-menu__group-section_box-menu_name-section">About Us</li>
+								<li class="horizontal-menu__group-section_box-menu_name-section">Schegule</li>
+								<li class="horizontal-menu__group-section_box-menu_name-section">Studio policies</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
 	</header>
 	<section class="section-1">
 		<aside class="slide-image"></aside>
@@ -42,5 +53,10 @@
 	<section class="section-6"></section>
 	<section class="section-7"></section>
 	<footer></footer>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>	
