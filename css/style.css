@@ -60,15 +60,37 @@ body {
   font-family: "PT Sans", sans-serif;
 }
 
-.horizontal-menu__group-section_box-menu_name-section a, .dropdown-content a {
+.logotype a, .horizontal-menu__group-section_box-menu_name-section a, .dropdown-content a {
   color: #000000;
   text-decoration: none;
 }
-.horizontal-menu__group-section_box-menu_name-section a:hover, .dropdown-content a:hover {
+.logotype a:hover, .horizontal-menu__group-section_box-menu_name-section a:hover, .dropdown-content a:hover {
   color: #13B5EA;
 }
-.horizontal-menu__group-section_box-menu_name-section a:focus, .dropdown-content a:focus {
+.logotype a:focus, .horizontal-menu__group-section_box-menu_name-section a:focus, .dropdown-content a:focus {
   color: #13B5EA;
+}
+
+.header-logotype {
+  background-color: #f0faff;
+}
+
+.logotype {
+  display: flex;
+  justify-content: center;
+}
+.logotype a {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  color: #00cc00;
+}
+.logotype a:hover {
+  color: #00cc00;
+}
+.logotype a img {
+  width: 10%;
+  margin: 12px 5px 12px 0;
 }
 
 .horizontal-menu__group-section_box-menu {
