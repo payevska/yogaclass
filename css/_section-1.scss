@@ -1,17 +1,47 @@
+section-1 {
+	background-image: url('../img/cairn-2776470_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.6;
+    display: flex;
+}
+
+.sign-up-block{
+	padding: 900px;
+	
+}
+
+
+
+
+
+
+
+
+
+/* For slide
 .foto-block {
 	&__slide-image {
 		position: relative;
 		&_foto-main {
+			background-image: url('../img/cairn-2776470_1920.jpg');
+		    background-repeat: no-repeat;
+		    background-position: center center; 
 			width: 100%;
 		    position: absolute;
 		    opacity: 0.6;
-		}
-		&_text-main {
-			position: absolute;
-    		margin-top: 150px;
-		    padding: 30px 18px 0 30px;
-    		@extend %for-h1;
+		    background-size: cover;
+		    &_text-main {
+				position: absolute;
+				padding: 120px 18px 808px 30px;
+	    		@extend %for-h1;
+			}
 		}
 	}
 }
-	
+
+.section-1 {
+	background-color: $blue;
+    display: flex;
+}
+ */

@@ -3,15 +3,18 @@
   top: 0;
   width: 100%;
 } */
-
-.header-logotype {
+header {
 	background-color: $blue;
 }
 
-.logotype {	
+.header-wrap {
     display: flex;
-    justify-content: center;
-    @extend %for-a;
+    justify-content: space-between;
+    
+}
+
+.logotype {
+	@extend %for-a;
 	a {
 	    text-align: center;
 	    font: {
@@ -23,24 +26,36 @@
 		    color: $white;		    
     	}
 	    img {
-	    	width: 5%;
-    		margin: 14px 5px 25px 0;
+	    	width: 15%;
+    		margin: 15px 5px 20px 0;
 	    }
 	}
 }
 
+/* .header-nav {
+	background-color: $blue;
+} */
+
 .horizontal-menu {
-	margin: 6px 0;
+	display: flex;
+	align-items: center;	
 	&__group-section {
+		padding: 0;
 		&_box-menu {
 			list-style: none;
 		    display: flex;
-		    justify-content: space-around;
+		    justify-content: space-between;
 		    padding-left: 0;
 			margin: 0;
 			&_name-section {
 				@extend %for-a;
-				font-weight: $medium-plus;
+				a:hover {
+		    		color: $white;		    
+    			}
+				font: {
+					weight: $medium-plus;
+					size: 17px;
+				}	
 			}
 		}
 	}	
@@ -52,10 +67,6 @@ menu {
 	visibility: hidden;
 }
 
-nav {
-	display: flex;
-}
-
 .drop-down {
 	position: relative;
 	display: flex;
@@ -64,6 +75,7 @@ nav {
 		display: none;
 		position: absolute;
 		background-color: $white;
+		border-radius: 6px;
 		min-width: 160px;
 		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		z-index: 1;
@@ -75,10 +87,15 @@ nav {
 		a {
 			padding: 3px 0px 3px 45px;
 			display: block;
-			font-weight: $medium;
+			font: {
+					weight: $medium;
+					size: 17px;
+				}
 		}
 		a:hover {
 			background-color: #f1f1f1;
+			border-radius: 6px;
+			color: $blue;
 		}
 	}
 
