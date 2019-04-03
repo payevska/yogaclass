@@ -1,0 +1,15 @@
+.social-web {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    @extend %for-a;
+    a {
+    	color: $blue-dark;
+    }
+    &__icons {
+    	@extend %for-a;
+    	a {
+    		margin: 0 4px;
+    	}
+    }
+}

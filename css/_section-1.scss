@@ -1,47 +1,78 @@
-section-1 {
+// Section-1
+
+
+// Slider
+.main-page, #slider, .wrap, .slide-content {
+	margin: 0;
+	padding: 0;	
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.wrap {
+	position: relative;
+}
+
+.slide {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.8;
+}
+
+.slide1{
 	background-image: url('../img/cairn-2776470_1920.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    opacity: 0.6;
-    display: flex;
+}
+.slide2{
+	background-image: url('../img/foto2.jpg');
 }
 
-.sign-up-block{
-	padding: 900px;
-	
+.slide3{
+	background-image: url('../img/foto3.jpg');
+}
+
+.slide-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;	
+	@extend %for-h1;
+	h1 {
+		font-weight: $bold;
+		margin-bottom: 80px;
+		color: $white;
+	} 
+}
+
+.text-main {
+	width: 50%;
+}
+
+.arrow {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	z-index: 1;
+}
+
+#arrow-left {
+	border-width: 20px 25px 20px 0;
+	border-color: transparent #fff transparent transparent;
+	left: 0;
+	margin-left: 30px;
+}
+
+#arrow-right {
+	border-width: 20px 0 20px 25px;
+	border-color: transparent transparent transparent #fff;
+	right: 0;
+	margin-right: 30px;
 }
 
 
-
-
-
-
-
-
-
-/* For slide
-.foto-block {
-	&__slide-image {
-		position: relative;
-		&_foto-main {
-			background-image: url('../img/cairn-2776470_1920.jpg');
-		    background-repeat: no-repeat;
-		    background-position: center center; 
-			width: 100%;
-		    position: absolute;
-		    opacity: 0.6;
-		    background-size: cover;
-		    &_text-main {
-				position: absolute;
-				padding: 120px 18px 808px 30px;
-	    		@extend %for-h1;
-			}
-		}
-	}
-}
-
-.section-1 {
-	background-color: $blue;
-    display: flex;
-}
- */

@@ -3,28 +3,60 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 	<meta name="description" content="Web desing landing page">
-	<meta name="autor" content="Brad Traversy">
+	<meta name="autor" content="Yuliya Payevska">
 	<meta name="keywords" content="web desing, landing page">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<title>Site_landing_page</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 	<!-- START HEADER  -->
 	<header id="myHeader" class="sticky-top">		
-		<div class="container">
+		<div class="container-fluid">
   			<div class="row">
   				<div class="col-xl header-wrap">
-					<div class="col-xl-4 logotype">
+					<div class="col-xl-2 logotype">
 						<a href="#"  alt="logotype"><img src="img/logotype-white_yoga.png">YogaClass</a>
 					</div>
-					<nav class="col-xl-8 horizontal-menu">
-						<menu id="burger-menu" class="col-2">burger</menu>
-						<div class="col-10 horizontal-menu__group-section">
+					<div class="col-xl-2 menu-btn">
+				        <div class="menu-btn__btn-line"></div>
+				        <div class="menu-btn__btn-line"></div>
+				        <div class="menu-btn__btn-line"></div>
+				    </div>
+					<nav class="menu">
+				        <ul class="menu-nav">
+					        <li class="nav-item current">
+					            <a href="index.html" class="nav-link">
+					            Home
+					            </a>
+					        </li>
+					        <li class="nav-item">
+					            <a href="about.html" class="nav-link">
+					            About Me
+					            </a>
+					        </li>
+					        <li class="nav-item">
+					            <a href="work.html" class="nav-link">
+					            My Work
+					            </a>
+					        </li>
+					        <li class="nav-item">
+					            <a href="contact.html" class="nav-link">
+					            How To Reach Me
+					            </a>
+					        </li>
+				        </ul>
+				    </nav>
+					<div class="col-xl-8 horizontal-menu">
+						<!-- <menu id="burger-menu" class="col-2">burger</menu> -->
+						<div class="horizontal-menu__group-section">
 							<ul class="horizontal-menu__group-section_box-menu">
 								<li class="horizontal-menu__group-section_box-menu_name-section"><a href="#home">Home</a></li>
 								<li class="horizontal-menu__group-section_box-menu_name-section drop-down">
@@ -45,35 +77,69 @@
 								<li class="horizontal-menu__group-section_box-menu_name-section"><a href="">Studio policies</a></li>
 							</ul>
 						</div>
-					</nav>
+					</div>
 				</div>
 			</div>
 		</div>
 	</header>
 	<!-- FINISH header -->
 	<!-- START section-1  -->
-	<section-1 id="home" class="sign-up">
-		<div class="container">
+	<section-1 class="main-page">
+		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xl sign-up-block">
-				<!--For slide <aside class="foto-block__slide-image">
-					<div class="foto-block__slide-image_foto-main"> 
-					<h1 class="col-xl-7 offset-xl-5 foto-block__slide-image_foto-main_text-main">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-					</h1>
+				<div class="wrap">
+					<div id="arrow-left" class="arrow"></div>
+					<div id="slider">
+						<div class="slide slide1">
+							<div class="slide-content">
+							<h1 class="text-main">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+							</h1>
+							</div>
+						</div>
+						<div class="slide slide2">
+							<div class="slide-content">
+							<h1 class="text-main">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+							</h1>
+							</div>
+						</div>
+						<div class="slide slide3">
+							<div class="slide-content">
+							<h1 class="text-main">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+							</h1>
+							</div>
+						</div>
+					</div>
+					<div id="arrow-right" class="arrow"></div>
 				</div>
-				</aside> -->
-				<!-- <aside class="foto-block__slide-image" src=""></aside>
-				<aside class="foto-block__slide-image" src=""></aside>
-				<aside class="foto-block__slide-image" src=""></aside>
-				<aside class="foto-block__slide-image" src=""></aside>
-				<aside class="foto-block__slide-image" src=""></aside> -->
 			</div>
 		</div>
 	</section-1>
 	<!-- FINISH section-1 -->
+
 	<!-- START section-2 -->
-	<section class="section-2"></section>
+	<section-2 id="about-us-page">		
+		<div class="container">
+			<div class="row">
+				<aside class="col-xl about-us">
+					<div class="col-xl-6 about-us__box-info">
+						<h2>Our classes</h2>
+						<p class="about-us__box-info_text-info">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam facere ullam quidem et excepturi, culpa doloremque. Accusantium architecto, doloribus ab officiis possimus, natus atque dolorem sit illo fuga quae assumenda.
+							Quisquam facere ullam quidem et excepturi, culpa doloremque. Accusantium architecto, doloribus ab officiis possimus, natus atque dolorem sit illo fuga quae assumenda.
+						</p>
+						<a href="">Click here for more info</a>
+					</div>
+					<div class="col-xl-6 about-us__foto-class">
+						<img src="img/yoga-2683522_1920.jpg" alt="class">
+					</div>
+				</aside>					
+				</div>
+			</div>
+		</div>
+	</section>
 	<!-- FINISH section-2 -->
 	<!-- START section-3 -->
 	<section class="section-3"></section>
@@ -91,9 +157,33 @@
 	<section class="section-7"></section>
 	<!-- FINISH section-7 -->
 	<!-- START footer -->
-	<footer></footer>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xl social-web">
+					<div class="social-web__icons">
+					    <a href="#!">
+					        <i class="fab fa-twitter fa-2x"></i>
+					    </a>
+					    <a href="https://www.facebook.com" target="_blank" alt="Facebook">
+					        <i class="fab fa-facebook fa-2x"></i>
+					    </a>
+					    <a href="https://www.linkedin.com/" target="_blank" alt="Linkedin">
+					        <i class="fab fa-linkedin fa-2x"></i>
+					    </a>
+					    <a href="https://www.instagram.com" target="_blank" alt="Instagram">
+					        <i class="fab fa-instagram fa-2x"></i>
+					    </a>
+					    <!-- <a href="https://www." target="_blank" alt="Mail">
+					        <i class="fas fa-envelope"></i>
+					    </a> -->
+					</div>
+				</div>	    
+		    </div>
+		</div>		    
+	</footer>
 	<!-- FINISH footer -->
-
+<a class="wsite-social-item wsite-social-facebook" href="https://www.facebook.com/flowyogastudio/" target="_blank" alt="Facebook"><span class="wsite-social-item-inner"></span></a>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

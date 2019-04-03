@@ -9,7 +9,8 @@ body {
 		color: $blue-dark;
     	text-decoration: none;	  
   		&:hover {
-		    color: $blue;		    
+		    color: $blue;
+		    transition: all 0.3s ease-out;		    
     	}
   		&:focus {
 		    color: $blue;		    
@@ -27,3 +28,27 @@ body {
 	color: $blue-dark;
 }
 
+%for-h2 {
+	font: {
+		family: 'PT Serif', serif;
+		size: 28px;
+		weight: $medium;
+	}
+    line-height: 1.3;
+	color: $blue-dark;
+}
+
+%for-p {
+	font: {
+		family: 'PT Sans', sans-serif;
+		size: 18px;
+		weight: $regular;
+	}
+	color: $blue-dark;	
+}
+
+/* @import 'menu';  */
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
