@@ -1,9 +1,10 @@
 
+/*  Section-2 */
 
 .about-us {
 	display: flex;
-	margin-top: 50px;
-    margin-bottom: 50px;
+	margin-top: 55px;    
+    padding: 0;
 	&__box-info {
 	    display: flex;
 	    flex-direction: column;
@@ -26,7 +27,7 @@
 	    }
 	}
 	&__foto-class {
-
+		padding: 0;
 		img {
 			width: 100%;
 		}

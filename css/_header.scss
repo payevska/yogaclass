@@ -1,47 +1,72 @@
-// HEADER
+
+
+/*  HEADER */
 header {
-	background-color: rgba(19, 181, 234, 0.6);	
+	background-color: rgba(255, 255, 255, 0.9);	
 }
 
 .header-wrap {
     display: flex;
-    align-items: center;   
+    align-items: center;       
 }
 
 .logotype {
+  margin: 5px 0 5px;
 	@extend %for-a;
 	a {
-	    text-align: center;
-	    font: {
-	    	size: 20px;
-	    	weight: 900;
-	    }	
-    	color: $white;
-    	&:hover {
-		    color: $white;		    
-    	}
-	    img {
-	    	width: 10%;
-    		margin: 5px 5px 10px 0;
-	    }
-	}
+    border-radius: 20px;    
+    text-align: center;
+    font: {
+    	size: 17px;
+    	weight: 900;
+    }	
+  	color: $green;
+  	&:hover {
+	    color: $green;		    
+  	}
+    img {
+    	width: 30%;
+  		margin-right: 3px;
+    }
+    align-items: center; 
+  }    
 }
 
+/* .logotype {
+  @extend %for-a;
+  a {
+      text-align: center;
+      font: {
+        size: 20px;
+        weight: 900;
+      }  
+      color: $white;
+      &:hover {
+        color: $white;        
+      }
+      img {
+        width: 10%;
+        margin: 5px 5px 10px 0;
+      }
+
+  }
+}
+ */
 .horizontal-menu {
-		
+	padding-left: 200px;	
 	&__group-section {
 		padding: 0;
 		&_box-menu {
 			list-style: none;
-		    display: flex;
-		    justify-content: space-between;
-		    padding-left: 0;
+	    display: flex;
+	    justify-content: space-between;
+	    padding-left: 0;
 			margin: 0;
 			&_name-section {
 				@extend %for-a;
 				a:hover {
-		    		color: $white;		    
-    			}
+	    		color: $blue-light;
+        }    		
 				font: {
 					weight: $medium-plus;
 					size: 17px;
@@ -70,9 +95,9 @@ header {
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
-    margin-top: 24px;
-    list-style: none;
-	padding: 0;
+  margin-top: 24px;
+  list-style: none;
+  padding: 0;
 	left: -45px;
 	@extend %for-a;
 	a {
@@ -101,45 +126,78 @@ header {
 
  // Menu Button
 .menu-btn {
-  /* position: absolute;
-  z-index: 3; */
-  right: 35px;
-  
+  position: absolute;
+  z-index: 3;
+  right: 50px;  
   cursor: pointer;
   @include easeOut;
 
+  .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: $white;;
+    @include easeOut;
+  }  
+}
+
+// Rotate Into X With Menu Lines
+.close {
+  transform: rotate(180deg);
+
+  .btn-line {
+    // Line 1 - Rotate
+    &:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    // Line 2 - Hide
+    &:nth-child(2) {
+      opacity: 0;
+    }
+
+    // Line 3 - Rotate
+    &:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px);
+    }
+  }
+}
+  /* position: absolute;
+  z-index: 3;
+  right: 35px;  
+  cursor: pointer;
+  @include easeOut;
   &__btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: set-text-color($green);
     @include easeOut;
-  }
-  
+  }   */
 
-  // Rotate Into X With Menu Lines
+  /* // Rotate Into X With Menu Lines
   .close {
     transform: rotate(180deg);
-
+  
     .btn-line {
       // Line 1 - Rotate
       &:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
       }
-
+  
       // Line 2 - Hide
       &:nth-child(2) {
         opacity: 0;
       }
-
+  
       // Line 3 - Rotate
       &:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px);
       }
     }
-  }
+  } */
 
-}
+
 // Menu Overlay
 .menu {
   position: fixed;
@@ -147,11 +205,15 @@ header {
   width: 100%;
   opacity: 0.9;
   visibility: hidden;
-
+  display: flex;
+  justify-content: center;
   &.show {
     visibility: visible;
   }
 
+  /* &.show {
+    visibility: visible;
+  } */
   
   &-nav {
     display: flex;
@@ -159,7 +221,7 @@ header {
     align-items: center;
     justify-content: center;
     float: left;
-    width: 50%;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
   }
@@ -167,32 +229,28 @@ header {
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($black, 5);
+    background: $blue-dark;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
-
     &.show {
       // Slide in from top
       transform: translate3d(0, 0, 0);
     }
   }
 
-  // Branding Side
-  
 
+  // Branding Side  
   .nav-item {
     transform: translate3d(600px, 0, 0);
     @include easeOut;
-
     &.show {
       // Slide in from right
       transform: translate3d(0, 0, 0);
     }
-
     &.current > a {
-      color: $black;
-    }
+      color: $blue-air;
+      }
   }
 
   .nav-link {
@@ -202,12 +260,12 @@ header {
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
+    color: $white;
     color: set-text-color($green);
     text-decoration: none;
     @include easeOut;
-
     &:hover {
-      color: $black;
+      color: $blue-air;
     }
   }
 }

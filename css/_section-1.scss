@@ -1,5 +1,5 @@
-// Section-1
 
+/*  Section-1 */
 
 // Slider
 .main-page, #slider, .wrap, .slide-content {
@@ -18,32 +18,38 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	opacity: 0.8;
+	/* opacity: 0.6; */
+	/* opacity: 0.8; */
 }
 
 .slide1{
 	background-image: url('../img/cairn-2776470_1920.jpg');
 }
+
 .slide2{
 	background-image: url('../img/foto2.jpg');
 }
 
 .slide3{
-	background-image: url('../img/foto3.jpg');
+	background-image: url('../img/DSC00351.jpg');
 }
 
 .slide-content {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: start;
 	align-items: center;
 	text-align: center;	
+    background: rgba(160, 228, 255, 0.5);
 	@extend %for-h1;
 	h1 {
 		font-weight: $bold;
-		margin-bottom: 80px;
-		color: $white;
-	} 
+		padding-top: 140px;
+	    justify-content: center;
+	    align-items: center;
+	    text-align: center;
+	    color: $white;
+	}   	 
 }
 
 .text-main {
@@ -63,14 +69,16 @@
 
 #arrow-left {
 	border-width: 20px 25px 20px 0;
-	border-color: transparent #fff transparent transparent;
+	border-color: transparent $white transparent transparent;
+	opacity: 0.7;
 	left: 0;
 	margin-left: 30px;
 }
 
 #arrow-right {
 	border-width: 20px 0 20px 25px;
-	border-color: transparent transparent transparent #fff;
+	border-color: transparent transparent transparent $white;
+	opacity: 0.7;
 	right: 0;
 	margin-right: 30px;
 }
