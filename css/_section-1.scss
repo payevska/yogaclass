@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-
-/*  Section-1 */
-=======
 // Section-1
->>>>>>> 1dea41d9389ea3d766017ec4feebcf047bb79a31
 
 
 // Slider
@@ -23,11 +18,7 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-<<<<<<< HEAD
-	/* opacity: 0.6; */
-=======
 	opacity: 0.8;
->>>>>>> 1dea41d9389ea3d766017ec4feebcf047bb79a31
 }
 
 .slide1{
@@ -38,26 +29,12 @@
 }
 
 .slide3{
-<<<<<<< HEAD
-	background-image: url('../img/DSC00351.jpg');
-=======
 	background-image: url('../img/foto3.jpg');
->>>>>>> 1dea41d9389ea3d766017ec4feebcf047bb79a31
 }
 
 .slide-content {
 	display: flex;
 	flex-direction: column;
-<<<<<<< HEAD
-	justify-content: start;
-	align-items: center;
-	text-align: center;	
-    background: rgba(160, 228, 255, 0.5);
-	@extend %for-h1;
-	h1 {
-		font-weight: $bold;
-		padding-top: 140px;
-=======
 	justify-content: center;
 	align-items: center;
 	text-align: center;	
@@ -65,7 +42,6 @@
 	h1 {
 		font-weight: $bold;
 		margin-bottom: 80px;
->>>>>>> 1dea41d9389ea3d766017ec4feebcf047bb79a31
 		color: $white;
 	} 
 }
@@ -87,24 +63,14 @@
 
 #arrow-left {
 	border-width: 20px 25px 20px 0;
-<<<<<<< HEAD
-	border-color: transparent $white transparent transparent;
-	opacity: 0.7;
-=======
 	border-color: transparent #fff transparent transparent;
->>>>>>> 1dea41d9389ea3d766017ec4feebcf047bb79a31
 	left: 0;
 	margin-left: 30px;
 }
 
 #arrow-right {
 	border-width: 20px 0 20px 25px;
-<<<<<<< HEAD
-	border-color: transparent transparent transparent $white;
-	opacity: 0.7;
-=======
 	border-color: transparent transparent transparent #fff;
->>>>>>> 1dea41d9389ea3d766017ec4feebcf047bb79a31
 	right: 0;
 	margin-right: 30px;
 }
