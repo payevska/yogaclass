@@ -1,10 +1,41 @@
+<<<<<<< HEAD
+
+/*  HEADER */
+header {
+	background-color: rgba(255, 255, 255, 0.9);	
+=======
 // HEADER
 header {
 	background-color: rgba(19, 181, 234, 0.6);	
+>>>>>>> 1dea41d9389ea3d766017ec4feebcf047bb79a31
 }
 
 .header-wrap {
     display: flex;
+<<<<<<< HEAD
+    align-items: center; 
+      
+}
+
+.logotype {
+  margin: 5px 0 5px;
+	@extend %for-a;
+	a {
+    border-radius: 20px;    
+    text-align: center;
+    font: {
+    	size: 17px;
+    	weight: 900;
+    }	
+  	color: $green;
+  	&:hover {
+	    color: $green;		    
+  	}
+    img {
+    	width: 30%;
+  		margin-right: 3px;
+    }
+=======
     align-items: center;   
 }
 
@@ -24,23 +55,38 @@ header {
 	    	width: 10%;
     		margin: 5px 5px 10px 0;
 	    }
+>>>>>>> 1dea41d9389ea3d766017ec4feebcf047bb79a31
 	}
 }
 
 .horizontal-menu {
+<<<<<<< HEAD
+	padding-left: 200px;	
+=======
 		
+>>>>>>> 1dea41d9389ea3d766017ec4feebcf047bb79a31
 	&__group-section {
 		padding: 0;
 		&_box-menu {
 			list-style: none;
+<<<<<<< HEAD
+	    display: flex;
+	    justify-content: space-between;
+	    padding-left: 0;
+=======
 		    display: flex;
 		    justify-content: space-between;
 		    padding-left: 0;
+>>>>>>> 1dea41d9389ea3d766017ec4feebcf047bb79a31
 			margin: 0;
 			&_name-section {
 				@extend %for-a;
 				a:hover {
+<<<<<<< HEAD
+	    		color: $blue-light;		    
+=======
 		    		color: $white;		    
+>>>>>>> 1dea41d9389ea3d766017ec4feebcf047bb79a31
     			}
 				font: {
 					weight: $medium-plus;
@@ -51,12 +97,15 @@ header {
 	}	
 }
 
+<<<<<<< HEAD
+=======
 /* menu {
   margin: 0;
   color: $blue;
   visibility: hidden;
 } */
 
+>>>>>>> 1dea41d9389ea3d766017ec4feebcf047bb79a31
 .drop-down {
 	position: relative;
 	display: flex;
@@ -70,8 +119,13 @@ header {
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
+<<<<<<< HEAD
+  margin-top: 24px;
+  list-style: none;
+=======
     margin-top: 24px;
     list-style: none;
+>>>>>>> 1dea41d9389ea3d766017ec4feebcf047bb79a31
 	padding: 0;
 	left: -45px;
 	@extend %for-a;
@@ -101,6 +155,46 @@ header {
 
  // Menu Button
 .menu-btn {
+<<<<<<< HEAD
+  position: absolute;
+  z-index: 3;
+  right: 50px;  
+  cursor: pointer;
+  @include easeOut;
+
+  .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: $white;;
+    @include easeOut;
+  }  
+}
+
+// Rotate Into X With Menu Lines
+.close {
+  transform: rotate(180deg);
+
+  .btn-line {
+    // Line 1 - Rotate
+    &:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    // Line 2 - Hide
+    &:nth-child(2) {
+      opacity: 0;
+    }
+
+    // Line 3 - Rotate
+    &:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px);
+    }
+  }
+}
+
+
+=======
   /* position: absolute;
   z-index: 3; */
   right: 35px;
@@ -140,6 +234,7 @@ header {
   }
 
 }
+>>>>>>> 1dea41d9389ea3d766017ec4feebcf047bb79a31
 // Menu Overlay
 .menu {
   position: fixed;
@@ -147,11 +242,19 @@ header {
   width: 100%;
   opacity: 0.9;
   visibility: hidden;
+<<<<<<< HEAD
+  display: flex;
+  justify-content: center;
+  &.show {
+    visibility: visible;
+  }
+=======
 
   &.show {
     visibility: visible;
   }
 
+>>>>>>> 1dea41d9389ea3d766017ec4feebcf047bb79a31
   
   &-nav {
     display: flex;
@@ -159,7 +262,11 @@ header {
     align-items: center;
     justify-content: center;
     float: left;
+<<<<<<< HEAD
+    width: 100%;
+=======
     width: 50%;
+>>>>>>> 1dea41d9389ea3d766017ec4feebcf047bb79a31
     height: 100vh;
     overflow: hidden;
   }
@@ -167,7 +274,11 @@ header {
   &-nav {
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
+    background: $blue-dark;
+=======
     background: darken($black, 5);
+>>>>>>> 1dea41d9389ea3d766017ec4feebcf047bb79a31
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -178,8 +289,12 @@ header {
     }
   }
 
+<<<<<<< HEAD
+  // Branding Side  
+=======
   // Branding Side
   
+>>>>>>> 1dea41d9389ea3d766017ec4feebcf047bb79a31
 
   .nav-item {
     transform: translate3d(600px, 0, 0);
@@ -191,7 +306,11 @@ header {
     }
 
     &.current > a {
+<<<<<<< HEAD
+      color: $blue-air;
+=======
       color: $black;
+>>>>>>> 1dea41d9389ea3d766017ec4feebcf047bb79a31
     }
   }
 
@@ -202,12 +321,20 @@ header {
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
+<<<<<<< HEAD
+    color: $white;
+=======
     color: set-text-color($green);
+>>>>>>> 1dea41d9389ea3d766017ec4feebcf047bb79a31
     text-decoration: none;
     @include easeOut;
 
     &:hover {
+<<<<<<< HEAD
+      color: $blue-air;
+=======
       color: $black;
+>>>>>>> 1dea41d9389ea3d766017ec4feebcf047bb79a31
     }
   }
 }
