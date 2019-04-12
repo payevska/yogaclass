@@ -38,6 +38,16 @@ body {
 	color: $blue-dark;
 }
 
+%for-h3 {
+	font: {
+		family: 'PT Sans', sans-serif;
+		size: 22px;
+		weight: $medium;
+	}
+    line-height: 1.3;
+	color: $blue-dark;
+}
+
 %for-p {
 	font: {
 		family: 'PT Sans', sans-serif;

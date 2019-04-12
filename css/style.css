@@ -51,16 +51,16 @@ body {
   box-sizing: border-box;
   font-family: "PT Sans", sans-serif; }
 
-.logotype a, .horizontal-menu__group-section_box-menu_name-section a, .dropdown-content a, .about-us__box-info a, .social-web a, .social-web__icons a {
+.logotype a, .horizontal-menu__group-section_box-menu_name-section a, .dropdown-content a, .about-us__box-info a, .contact form button a, .social-web a, .social-web__icons a {
   color: #004c65;
   text-decoration: none; }
-  .logotype a:hover, .horizontal-menu__group-section_box-menu_name-section a:hover, .dropdown-content a:hover, .about-us__box-info a:hover, .social-web a:hover, .social-web__icons a:hover {
+  .logotype a:hover, .horizontal-menu__group-section_box-menu_name-section a:hover, .dropdown-content a:hover, .about-us__box-info a:hover, .contact form button a:hover, .social-web a:hover, .social-web__icons a:hover {
     color: #13B5EA;
     transition: all 0.3s ease-out; }
-  .logotype a:focus, .horizontal-menu__group-section_box-menu_name-section a:focus, .dropdown-content a:focus, .about-us__box-info a:focus, .social-web a:focus, .social-web__icons a:focus {
+  .logotype a:focus, .horizontal-menu__group-section_box-menu_name-section a:focus, .dropdown-content a:focus, .about-us__box-info a:focus, .contact form button a:focus, .social-web a:focus, .social-web__icons a:focus {
     color: #13B5EA; }
 
-.slide-content {
+.slide-content, .brand {
   font-family: 'PT Serif', serif;
   font-size: 40px;
   font-weight: 600;
@@ -74,7 +74,14 @@ body {
   line-height: 1.3;
   color: #004c65; }
 
-.about-us__box-info {
+h3 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #004c65; }
+
+.about-us__box-info, .company-info ul li, .contact form label, .contact form p {
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -389,6 +396,117 @@ cursor: pointer;
       width: 100%; }
 
 /*  Section-3 */
+/* *{
+  box-sizing: border-box;
+} */
+/* body{
+  background:#92bde7;
+  color:#485e74;
+  line-height:1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding:1em;
+}
+ */
+/* .container{
+  max-width:1170px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:1em;
+} */
+/* ul{
+  list-style: none;
+  padding:0;
+} */
+.contact-us {
+  padding: 0;
+  margin-top: 100px; }
+
+.brand {
+  text-align: center;
+  display: flex;
+  justify-content: center; }
+
+/* .brand span{
+  color:#fff;
+} */
+.wrapper {
+  display: flex;
+  margin-top: 30px;
+  /* box-shadow: 0 0 20px 0 rgba(72,94,116,0.7); */ }
+
+.wrapper > * {
+  padding: 1em; }
+
+h3 {
+  font-weight: 600;
+  margin-bottom: 10px; }
+
+.company-info {
+  background: #88d3f2; }
+
+.company-info h3, .company-info ul {
+  text-align: center;
+  margin: 0 0 1rem 0;
+  list-style: none;
+  padding: 0; }
+
+.company-info ul li {
+  line-height: 1.7; }
+
+.contact {
+  background: rgba(113, 149, 161, 0.1); }
+
+/* FORM STYLES */
+.contact form {
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr;
+  grid-gap:20px; */ }
+
+.contact form label {
+  display: block; }
+
+.contact form p {
+  margin: 0; }
+
+.contact form input {
+  margin-bottom: 5px; }
+
+.contact form button, .contact form input, .contact form textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #88d3f2; }
+
+.contact form button {
+  background: #88d3f2;
+  border: 0;
+  text-transform: uppercase;
+  margin-top: 10px; }
+
+.contact form button:hover, .contact form button:focus {
+  background: #7195a1;
+  color: #ffffff;
+  outline: 0;
+  transition: background-color 2s ease-out; }
+
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: #6cbe45;
+  color: #ffffff;
+  margin-bottom: 10px;
+  display: none; }
+
+/* LARGE SCREENS */
+@media (min-width: 700px) {
+  .wrapper {
+    /* display: grid; */
+    /* grid-template-columns: 1fr 2fr; */ }
+
+  .wrapper > * {
+    padding: 2em; }
+
+  .company-info h3, .company-info ul, .brand {
+    text-align: left; } }
 /*  Footer */
 footer {
   margin: 50px 0; }
