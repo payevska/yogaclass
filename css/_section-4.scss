@@ -1,0 +1,40 @@
+/*  Section-4 */
+
+.topic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topic {
+	&__gallery-topic {
+		margin-top: 80px;
+		@extend %for-h2;
+		font-weight: $medium-plus; 		
+	}
+	&__gallery-topic-text {
+		
+		@extend %for-p;
+	}
+}
+
+.gallery {
+	display: flex;
+    flex-wrap: wrap;
+    &__friends {
+    	margin-top: 30px;
+    	&_friends-foto {
+    		img {
+    			width: 100%;
+    		}
+    	}
+    	&_friends-info {
+    		&_info-text {
+    			@extend %for-h3;
+    		}
+    		&_info-link {
+    			@extend %for-a;
+    		}
+    	}
+    }
+}

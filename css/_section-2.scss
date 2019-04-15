@@ -3,7 +3,7 @@
 
 .about-us {
 	display: flex;
-	margin-top: 55px;    
+	margin-top: 80px;    
     padding: 0;
 	&__box-info {
 	    display: flex;
@@ -27,10 +27,13 @@
 	    }
 	}
 	&__foto-class {
-		padding: 0;
+		
 		img {
 			width: 100%;
 		}
 	}
 }
 
+.foto-5 {
+	margin-bottom: 49px;
+}

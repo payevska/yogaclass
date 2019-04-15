@@ -53,11 +53,12 @@
 h3 {
 	@extend %for-h3;
 	font-weight: 600;
+  margin-top: 8px;
 	margin-bottom: 10px;
 }
 
 .company-info{
-  background: $blue-air;
+  /* background: $blue-air; */
 }
 
 .company-info h3, .company-info ul{
@@ -73,7 +74,7 @@ h3 {
 }
 
 .contact{
-  background:rgba(113, 149, 161, 0.1);;
+  /* background:rgba(113, 149, 161, 0.1); */
 }
 
 /* FORM STYLES */
@@ -100,12 +101,12 @@ h3 {
 .contact form button, .contact form input, .contact form textarea{
   width:100%;
   padding:0.5em;
-  border:1px solid $blue-air;
+  border:1px solid rgba(113, 149, 161, 0.5);
 }
 
 .contact form button{
 	@extend %for-a;
-  background: $blue-air;
+  background: $green;
   border:0;
   text-transform: uppercase;
   margin-top: 10px;
@@ -113,7 +114,7 @@ h3 {
 
 .contact form button:hover,.contact form button:focus{
 
-  background:$blue-light;  
+  background:$green-light;  
   color:$white;
   outline:0;
   transition: background-color 2s ease-out;
