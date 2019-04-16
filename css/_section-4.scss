@@ -31,10 +31,15 @@
     	&_friends-info {
     		&_info-text {
     			@extend %for-h3;
-    		}
-    		&_info-link {
-    			@extend %for-a;
-    		}
-    	}
+    		}    		
+			a {
+				@extend %for-a;
+				color: $blue;
+				&:hover {
+				    color: $blue-air;
+				    text-decoration: none;		    		    
+		    	}
+			}
+    	}	
     }
 }
